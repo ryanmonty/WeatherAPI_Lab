@@ -9,29 +9,6 @@
 <title>Insert title here</title>
 </head>
 <body>
-		 <form method="post" action="/results">
-      <label for="latitude">Latitude</label>
-      <input
-        type="number"
-        name="latitude"
-        min="-90"
-        max="90"
-        step="0.0001"
-        value="42.3314"
-        required
-      />
-      <label for="longitude">Longitude</label>
-      <input
-        type="number"
-        name="longitude"
-        min="-180"
-        max="180"
-        step="0.0001"
-        value="-83.0458"
-        required
-      />
-      <input type="submit" value="Submit" />
-    </form>
 	
 		<div>
 			Location: ${weather.location.areaDescription}

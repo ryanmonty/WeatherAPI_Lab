@@ -1,28 +1,33 @@
 package co.grandcircus.weatherapilab.model;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 public class currentobservation {
-	private String Date;
-	private String Weather;
-	private int Temp;
+	  @JsonProperty("Date")
+	    private String date;
+	  @JsonProperty("Weather")
+	    private String weather;
+	 @JsonProperty("Temp")
+	    private int temp;
 	
 	public String getWeather() {
-		return Weather;
+		return weather;
 	}
 	public void setWeather(String weather) {
-		Weather = weather;
+		this.weather = weather;
 	}
 	
 	public String getDate() {
-		return Date;
+		return date;
 	}
 	public void setDate(String date) {
-		Date = date;
+		this.date = date;
 	}
 	public int getTemp() {
-		return Temp;
+		return temp;
 	}
 	public void setTemp(int temp) {
-		Temp = temp;
+		this.temp = temp;
 	}
 	
 	

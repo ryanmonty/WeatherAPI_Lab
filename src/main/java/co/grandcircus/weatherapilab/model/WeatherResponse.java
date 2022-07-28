@@ -1,9 +1,10 @@
 package co.grandcircus.weatherapilab.model;
 
-public class WeatherReport {
+public class WeatherResponse {
 	private location location;
 	private currentobservation currentobservation;
 	private time time;
+	private data data;
 	
 	public location getLocation() {
 		return location;
@@ -22,6 +23,12 @@ public class WeatherReport {
 	}
 	public void setTime(time time) {
 		this.time = time;
+	}
+	public data getData() {
+		return data;
+	}
+	public void setData(data data) {
+		this.data = data;
 	}
 	
 	
